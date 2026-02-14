@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>SurgicalTCG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://www.paypal.com/sdk/js?client-id=BAAbcG-9rTRMW6XpGyGHQNqxuCmNUvcC5D6jtTwq_fl4lSIGTEOVgsvEfYXpjW2a2XnbCiDgeMFGjuMcsQ&components=hosted-buttons&disable-funding=venmo&currency=EUR"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=TUO_CLIENT_ID&components=hosted-buttons&disable-funding=venmo&currency=EUR"></script>
+    <script src="js/script.js"></script>
+    <style>
+        /* Pop-up PayPal */
+        #paypal-popup {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        .paypal-popup-content {
+            background: #141414;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            min-width: 250px;
+            max-width: 320px;
+            position: relative;
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 24px;
+            color: #fff;
+            cursor: pointer;
+        }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <img src="img/logo-small.png" alt="Logo SurgicalTCG">
+            <span>SurgicalTCG</span>
+        </div>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#pokemon">Pokémon</a>
+            <a href="#onepiece">One Piece</a>
+            <a href="#">Contatti</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Carte originali<br>Scelte con precisione</h1>
+            <p>Pokémon & One Piece — solo prodotti selezionati SurgicalTCG</p>
+            <a href="#pokemon" class="btn-primary">Scopri le carte</a>
+        </div>
+    </section>
+
+    <!-- POKÉMON -->
+    <section id="pokemon" class="products">
+        <h2>Pokémon</h2>
+        <div class="products-grid">
+
+            <!-- PRODOTTO 1 -->
+            <div class="product-card">
+                <img src="img/pkm1.jpg" alt="Box Pokemon">
+                <h3>Pokémon Megadream EX M2A Jap Edition</h3>
+                <p>Special Edition - 10 Max - 10 MEGA Carte da Collezione</p>
+                <button class="buy-btn" onclick="openPaypal('7L2KGZHD6P666')">Acquista ora</button>
+            </div>
+
+            <!-- PRODOTTO 2 -->
+            <div class="product-card">
+                <img src="img/pkm2.jpg" alt="Box Pokémon">
+                <h3>Box Luce Nera</h3>
+                <p>Box 6 Bustine di Luce Nera Edizione Italiana</p>
+                <button class="buy-btn" onclick="openPaypal('SCDX87VUSXZ5C')">Acquista ora</button>
+            </div>
+
+            <!-- PRODOTTO 3 -->
+            <div class="product-card">
+                <img src="img/pkm3.jpg" alt="Box Pokémon">
+                <h3>Box Evoluzioni Prismatiche</h3>
+                <p>Box 6 Bustine di Evoluzioni Prismatiche Edizione Italiana</p>
+                <button class="buy-btn" onclick="openPaypal('SECVUZPML3LBS')">Acquista ora</button>
+            </div>
+
+            <!-- PRODOTTO 4 -->
+            <div class="product-card">
+                <img src="img/pkm4.jpg" alt="Box Pokémon">
+                <h3>Bustina MegaDream Jap Edition</h3>
+                <p>Bustina Singola M2A Jap MegaDream EX</p>
+                <button class="buy-btn" onclick="openPaypal('6RPEQSZBJ6NCJ')">Acquista ora</button>
+            </div>
+
+            <!-- PRODOTTO 5 -->
+            <div class="product-card">
+                <img src="img/pkm5.jpg" alt="Box Pokémon">
+                <h3>Bustina Ascesa Eroica</h3>
+                <p>Bustina Singola Ascesa Eroica Edizione Italiana</p>
+                <button class="buy-btn" onclick="openPaypal('ANBB59TYJLKNL')">Acquista ora</button>
+            </div>
+
+            <!-- PRODOTTO 6 -->
+            <div class="product-card">
+                <img src="img/pkm6.jpg" alt="Box Pokémon">
+                <h3>Bustina Fuoco Bianco</h3>
+                <p>Bustina Singola Fuoco Bianco Edizione Italiana</p>
+                <button class="buy-btn" onclick="openPaypal('EP69ZTKYG7JYC')">Acquista ora</button>
+            </div>
+
+            <!-- PRODOTTO 7 -->
+            <div class="product-card">
+                <img src="img/pkm7.jpg" alt="Box Pokémon">
+                <h3>Bustina Rivali Predestinati</h3>
+                <p>Bustina Singola Rivali Predestinati Edizione Italiana</p>
+                <button class="buy-btn" onclick="openPaypal('LL76RM6WF95TE')">Acquista ora</button>
+            </div>
+            
+            <!-- PRODOTTO 8 -->
+            <div class="product-card">
+                <img src="img/pkm8.jpg" alt="Box Pokémon">
+                <h3>Bustina Luce Nera</h3>
+                <p>Bustina Singola Luce Nera Edizione Italiana</p>
+                <button class="buy-btn" onclick="openPaypal('FAE7L8SC4ERBJ')">Acquista ora</button>
+            </div>
+
+            <!-- PRODOTTO 9 -->
+            <div class="product-card">
+                <img src="img/pkm9.jpg" alt="Box Pokémon">
+                <h3>Bustina Avventure Insieme S&C</h3>
+                <p>Bustina Singola Avventure Insieme Scarlatto e Violetto Edizione Italiana</p>
+                <button class="buy-btn" onclick="openPaypal('D7XCWHH2U4YXQ')">Acquista ora</button>
+            </div>
+
+            <!-- PRODOTTO 10 -->
+            <div class="product-card">
+                <img src="img/pkm10.jpg" alt="Box Pokémon">
+                <h3>Set Allenatore Fuoco Bianco</h3>
+                <p>BSet Allenatore Fuoco Bianco Edizione Speciale Italiana</p>
+                <button class="buy-btn" onclick="openPaypal('6QNQPF22NCYV8')">Acquista ora</button>
+            </div>
+
+            <!-- PRODOTTO 11 -->
+            <div class="product-card">
+                <img src="img/pkm11.jpg" alt="Box Pokémon">
+                <h3>Set Allenatore Luce Nera</h3>
+                <p>Set Allenatore Luce Nera Edizione Speciale Italiana</p>
+                <button class="buy-btn" onclick="openPaypal('HPSQ6SFRTTRR4')">Acquista ora</button>
+            </div>
+
+            <!-- PRODOTTO 12 -->
+            <div class="product-card">
+                <img src="img/pkm12.jpg" alt="Box Pokémon">
+                <h3>Collezione Pokemon Day 2026</h3>
+                <p>Collezione Pokemon Day 2026 con Figurine e Carte Esclusive Edizione Limitata Italiana</p>
+                <button class="buy-btn" onclick="openPaypal('5383LMCVY4V7Y')">Acquista ora</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ONE PIECE -->
+    <section id="onepiece" class="products">
+        <h2>One Piece</h2>
+        <div class="products-grid">
+
+            <div class="product-card">
+                <img src="img/op1.jpg" alt="Carta One Piece">
+                <h3>Bustina Singola PRB-02 Jap Edition</h3>
+                <p>Bustina Singola PRB-02 The Best Vol.2 Jap Edition</p>
+                <button class="buy-btn" onclick="openPaypal('N3L4CJBM5GDNU')">Acquista ora</button>
+            </div>
+
+            <div class="product-card">
+                <img src="img/op2.jpg" alt="Box">
+                <h3>Box PRB-02 Jap Edition</h3>
+                <p>Box PRB-02 The Best Vol.2 Jap Edition</p>
+                <div class="sold-out-btn">SOLD OUT!</div>
+            </div>
+
+        </div>
+    </section>
+
+   <div id="paypal-popup" class="hidden">
+    <div class="paypal-popup-content">
+        <span class="close-btn" onclick="closePaypal()">&times;</span>
+        <div id="paypal-container-popup" style="min-width:250px; max-width:300px;"></div>
+    </div>
+</div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="img/logo-small.png" alt="Logo SurgicalTCG" class="footer-logo">
+            <h3>SurgicalTCG</h3>
+            <p>Carte Pokémon & One Piece selezionate con precisione.</p>
+            <div class="footer-links">
+                <a href="">Instagram>SOON</a>
+                <a href="https://www.tiktok.com/@surgicaltcg?is_from_webapp=1&sender_device=pc">TikTok</a>
+                <a href="mailto:info@surgicaltcg.it">Email</a>
+            </div>
+            <p class="footer-copy">© 2026 SurgicalTCG — Tutti i diritti riservati</p>
+        </div>
+    </footer>
+
+    <script>
+        function openPaypal(buttonId) {
+            const container = document.getElementById('paypal-container-popup');
+            container.innerHTML = ''; // svuota contenitore precedente
+
+            paypal.HostedButtons({
+                hostedButtonId: buttonId
+            }).render('#paypal-container-popup');
+
+            document.getElementById('paypal-popup').classList.remove('hidden');
+        }
+
+        function closePaypal() {
+            document.getElementById('paypal-popup').classList.add('hidden');
+        }
+    </script>
+
+</body>
+</html>

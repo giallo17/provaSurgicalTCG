@@ -337,3 +337,20 @@ body {
         padding: 40px 20px;
     }
 }
+@media (max-width: 600px) {
+
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: nowrap;          /* ❗ non va a capo */
+        overflow-x: auto;           /* sicurezza se schermo piccolissimo */
+    }
+
+    .nav a {
+        margin: 0;
+        font-size: 14px;            /* leggermente più piccolo */
+        white-space: nowrap;        /* ❗ mai spezzare il testo */
+    }
+}

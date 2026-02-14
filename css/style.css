@@ -53,7 +53,7 @@ body {
 /* HERO */
 .hero {
     /* Background sicuro per GitHub Pages */
-    background-image: url("../img/sitebackground.png");
+    background-image: url("/provaSurgicalTCG/img/sitebackground.png");
     background-size: cover;        /* copre tutto lo spazio */
     background-position: center;   /* centrato */
     background-repeat: no-repeat;  /* niente ripetizione */

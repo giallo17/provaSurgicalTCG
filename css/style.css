@@ -279,3 +279,8 @@ body {
         grid-template-columns: 1fr;
     }
 }
+#popup-overlay {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}

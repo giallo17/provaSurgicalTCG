@@ -52,17 +52,11 @@ body {
 
 /* ================== HERO ================== */
 .hero {
-    height: calc(100vh - 80px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0 20px;
-    background-image: url('provaSurgicalTCG/img/sitebackground.png');
+    min-height: 100vh;
+    background-image: url("../img/sitebackground.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative;
 }
 
 .hero::before {

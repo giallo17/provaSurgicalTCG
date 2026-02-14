@@ -324,3 +324,41 @@ body {
     transform: translateY(0);
     box-shadow: 0 4px 10px rgba(230, 0, 0, 0.3);
 }
+.popup-hidden {
+    display: none;
+}
+
+#popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-box {
+    background: #141414;
+    padding: 25px;
+    border-radius: 14px;
+    max-width: 400px;
+    width: 90%;
+    position: relative;
+    text-align: center;
+}
+
+.popup-box img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.popup-close {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+}
